@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  h6{
+    font-size: 13px;
+    line-height: 13px;
+  }
+  p{
+    font-size: 11px;
+    line-height: 11px;
+    opacity: 0.5;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ;
+    background-color: #f5f5f5;
+    font-family: Barlow Semi Condensed ;
+    padding: 20px;
+    width: 1440px;
+    height: 900px;
+  }
+  
+  .container {
+    width: 1110px;
+    height: 572px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card5 card3";
+  }
+  
+  
+  .card {
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .purple {
+    grid-area: card1;
+    width: 540px;
+    height: 282px;
+    background-color: #733FC8;
+  }
+  .danf{
+    width: 121px;
+    height: 28px ;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .danh{
+    width: 476px;
+    height: 72px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .danp{
+    width: 476px;
+    height: 90px ;
+    font-size: 13px;
+    font-weight: 500 ;
+    line-height: 18px;
+    color: #CFCFCF;
+    opacity: 0.7;
+
+  }
+  
+  .dark-gray {
+    grid-area: card2;
+    width: 255px;
+    height:282px;
+    background-color: #48556A;
+    
+  }
+  .jonf{
+    width: 136px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .jonh{
+    width: 191px;
+    height: 72px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .jonp{
+    width: 191px;
+    height: 90px;
+    font-size:  13px ;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+    opacity: 0.7;
+  }
+  
+  .white {
+    grid-area: card3;
+    width: 255px;
+    height: 572px;
+    background-color: #fff;
+    color: #333;
+  }
+  .kirf{
+    width: 121px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .kirh{
+    width: 191px;
+    height: 72px ;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px ;
+    color: #48556A;
+  }
+  .kirp{
+    width: 191px;
+    height: 378px;
+    font-size: 13px;
+    font-weight: 500 ;
+    line-height: 18px ;
+    color: #48556A;
+    opacity: 0.7;
+  }
+
+  
+  .light-gray {
+    grid-area: card4;
+    width: 255px;
+    height:266px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  .jeaf{
+    width: 134px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .jeah{
+    width: 191px;
+    height: 72px;
+    font-size:20px ;
+    font-weight:600 ;
+    line-height: 24px ;
+    color: #48556A;
+
+  }
+  .jeap{
+    width: 191px;
+    height: 72px ;
+    font-size: 13px;
+    font-weight: 500 ;
+    line-height: 18px;
+    color: #48556A;
+    opacity: 0.7;
+  }
+  
+  .dark-blue {
+    width: 540px;
+    height: 266px;
+    grid-area: card5;
+    background-color: #19202D;
+  }
+  .patf{
+    width: 124px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .path{
+    width: 476px;
+    height: 72px;
+    font-size: 20px;
+    font-weight: 600 ;
+    line-height: 24px;
+    color: #ECF2F8;
+  }
+  .patp{
+    width: 476px;
+    height: 72px;
+    font-size: 13px;
+    font-weight: 500 ;
+    line-height: 18px;
+    opacity: 0.7;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5";
+    }
+  }
